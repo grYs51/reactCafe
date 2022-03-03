@@ -36,7 +36,7 @@ interface LinkItemProps {
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome, url: '/' },
   { name: 'Catalogus' , icon: FiShoppingBag, url: '/catalogus' },
-  { name: 'Settings', icon: FiSettings, url: '/settings' },
+  // { name: 'Settings', icon: FiSettings, url: '/settings' },
 ];
 
 const APPNAME = 'ChiroCafe'
@@ -76,7 +76,7 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
-      bg={useColorModeValue('white', 'gray.900')}
+      bg={useColorModeValue('gray.100', 'gray.900')}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
@@ -157,7 +157,7 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
         icon={<FiMenu />}
       />
 
-      <Text fontSize="2xl" ml="8" fontFamily="monospace" fontWeight="bold">
+      <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
         {APPNAME}
       </Text>
 

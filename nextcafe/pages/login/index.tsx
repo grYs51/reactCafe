@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 
 const Login: NextPage = () => {
   const { toggleColorMode } = useColorMode()
-  const formBackground = useColorModeValue("gray.100", "gray.700" )
+  const formBackground = useColorModeValue("gray.200", "gray.700" )
   return (
     <Flex align="center" justify="center" h="100vh">
       <Flex direction="column" p={12}bg={formBackground} rounded={6}>
